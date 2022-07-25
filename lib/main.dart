@@ -23,6 +23,7 @@ class MyHomePage extends StatelessWidget {
         title: Text("Despesas Pessoais"),
         centerTitle: true,
       ),
+      body: Text("Inicios"),
     );
   }
 }
