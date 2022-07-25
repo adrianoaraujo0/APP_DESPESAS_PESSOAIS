@@ -23,7 +23,22 @@ class MyHomePage extends StatelessWidget {
         title: Text("Despesas Pessoais"),
         centerTitle: true,
       ),
-      body: Text("Inicios"),
+      body: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Container(
+            width: double.infinity,
+            child: Card(
+              elevation: 5,
+              color: Colors.blue,
+              child: Text("Gráfico"),
+            ),
+          ),
+          Card(
+            child: Text("Lista de transações"),
+          ),
+        ],
+      ),
     );
   }
 }
